@@ -1,0 +1,49 @@
+.column{
+    /* Default styles are applied for mobile. */
+    float: left;
+    width: 100%; /*This will take up the entire width of the screen */
+    height: 50px;
+    background-color: black;
+    margin: 10px 0px;
+}
+
+@media (min-width: 768px){
+    .column{
+        background-color: blue;
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media(min-width: 992px){
+    .column{
+        background-color: green;
+    }
+}
+
+/*
+   Default styles are applied for desktop.
+
+.column{
+    float: left;
+    width: 30%;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .column{
+        background-color: green;
+    }
+}
+
+@media (max-width: 767px) {
+    .column{
+        background-color: orange;
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+*/
